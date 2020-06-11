@@ -31,8 +31,10 @@
 % 2011 IEEE International Conference on Robotics and Automation. IEEE, 2011.
 %
 % To use this program:
-% 1) run this file
-% 2) run the simulink model
+%
+%  1) run this file
+%
+%  2) run the simulink model
 
 % INITIALIZATION
 
@@ -52,12 +54,8 @@ rotor_offset_top = 0.01 ;
 motor_constant = 8.54858e-06 ;
 moment_constant = 0.016 ;
 max_rot_velocity = 838 ;
-allocation_matrix = ...
-    [1 1 1 1
-     0 arm_length 0 -arm_length
-     -arm_length 0 arm_length 0
-     -moment_constant moment_constant -moment_constant moment_constant] ;
-mix_matrix = inv(motor_constant * allocation_matrix) ;
+% TODO: fix the mixing matrix here
+mix_matrix = zeros(4) ;
 
 % TRAJECTORY GENERATION
 
