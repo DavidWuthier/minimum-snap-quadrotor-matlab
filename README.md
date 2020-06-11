@@ -3,8 +3,9 @@
 Repository for the part on trajectory generation from the course 31390 at DTU.
 
 Dependencies:
-* Optimization Toolbox
+* Simscape Multibody
 * Robotics Toolbox
+* Optimization Toolbox
 * traj\_gen
 
 To use this software:
